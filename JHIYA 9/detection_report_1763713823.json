@@ -1,0 +1,208 @@
+{
+  "time_period_seconds": 3600,
+  "total_suspicious_activities": 12,
+  "by_threat_level": {
+    "HIGH": 1,
+    "CRITICAL": 11
+  },
+  "blocked_ips": [
+    "192.168.1.102"
+  ],
+  "top_threat_ips": [
+    {
+      "ip": "192.168.1.102",
+      "incidents": 11,
+      "avg_threat_score": 120.0,
+      "threat_levels": [
+        "CRITICAL",
+        "CRITICAL",
+        "CRITICAL",
+        "CRITICAL",
+        "CRITICAL",
+        "CRITICAL",
+        "CRITICAL",
+        "CRITICAL",
+        "CRITICAL",
+        "CRITICAL",
+        "CRITICAL"
+      ]
+    },
+    {
+      "ip": "192.168.1.101",
+      "incidents": 1,
+      "avg_threat_score": 65.0,
+      "threat_levels": [
+        "HIGH"
+      ]
+    }
+  ],
+  "recent_alerts": [
+    {
+      "ip": "192.168.1.101",
+      "endpoint": "/contact",
+      "user_agent": "python-requests/2.28.0",
+      "threat_score": 65,
+      "threat_level": "HIGH",
+      "indicators": [
+        "Suspicious user agent: python-requests/2.28.0",
+        "Email harvesting pattern detected",
+        "Missing standard headers"
+      ],
+      "timestamp": "2025-11-21T14:00:23.712047"
+    },
+    {
+      "ip": "192.168.1.102",
+      "endpoint": "/page50",
+      "user_agent": "scrapy/2.9.0",
+      "threat_score": 120,
+      "threat_level": "CRITICAL",
+      "indicators": [
+        "Rate limit exceeded: 50 requests in 60s",
+        "Suspicious user agent: scrapy/2.9.0",
+        "Rapid endpoint traversal: 51 unique endpoints",
+        "Missing standard headers"
+      ],
+      "timestamp": "2025-11-21T14:00:23.714632"
+    },
+    {
+      "ip": "192.168.1.102",
+      "endpoint": "/page51",
+      "user_agent": "scrapy/2.9.0",
+      "threat_score": 120,
+      "threat_level": "CRITICAL",
+      "indicators": [
+        "Rate limit exceeded: 50 requests in 60s",
+        "Suspicious user agent: scrapy/2.9.0",
+        "Rapid endpoint traversal: 52 unique endpoints",
+        "Missing standard headers"
+      ],
+      "timestamp": "2025-11-21T14:00:23.714632"
+    },
+    {
+      "ip": "192.168.1.102",
+      "endpoint": "/page52",
+      "user_agent": "scrapy/2.9.0",
+      "threat_score": 120,
+      "threat_level": "CRITICAL",
+      "indicators": [
+        "Rate limit exceeded: 50 requests in 60s",
+        "Suspicious user agent: scrapy/2.9.0",
+        "Rapid endpoint traversal: 53 unique endpoints",
+        "Missing standard headers"
+      ],
+      "timestamp": "2025-11-21T14:00:23.714632"
+    },
+    {
+      "ip": "192.168.1.102",
+      "endpoint": "/page53",
+      "user_agent": "scrapy/2.9.0",
+      "threat_score": 120,
+      "threat_level": "CRITICAL",
+      "indicators": [
+        "Rate limit exceeded: 50 requests in 60s",
+        "Suspicious user agent: scrapy/2.9.0",
+        "Rapid endpoint traversal: 54 unique endpoints",
+        "Missing standard headers"
+      ],
+      "timestamp": "2025-11-21T14:00:23.714632"
+    },
+    {
+      "ip": "192.168.1.102",
+      "endpoint": "/page54",
+      "user_agent": "scrapy/2.9.0",
+      "threat_score": 120,
+      "threat_level": "CRITICAL",
+      "indicators": [
+        "Rate limit exceeded: 50 requests in 60s",
+        "Suspicious user agent: scrapy/2.9.0",
+        "Rapid endpoint traversal: 55 unique endpoints",
+        "Missing standard headers"
+      ],
+      "timestamp": "2025-11-21T14:00:23.714632"
+    },
+    {
+      "ip": "192.168.1.102",
+      "endpoint": "/page55",
+      "user_agent": "scrapy/2.9.0",
+      "threat_score": 120,
+      "threat_level": "CRITICAL",
+      "indicators": [
+        "Rate limit exceeded: 50 requests in 60s",
+        "Suspicious user agent: scrapy/2.9.0",
+        "Rapid endpoint traversal: 56 unique endpoints",
+        "Missing standard headers"
+      ],
+      "timestamp": "2025-11-21T14:00:23.714632"
+    },
+    {
+      "ip": "192.168.1.102",
+      "endpoint": "/page56",
+      "user_agent": "scrapy/2.9.0",
+      "threat_score": 120,
+      "threat_level": "CRITICAL",
+      "indicators": [
+        "Rate limit exceeded: 50 requests in 60s",
+        "Suspicious user agent: scrapy/2.9.0",
+        "Rapid endpoint traversal: 57 unique endpoints",
+        "Missing standard headers"
+      ],
+      "timestamp": "2025-11-21T14:00:23.714632"
+    },
+    {
+      "ip": "192.168.1.102",
+      "endpoint": "/page57",
+      "user_agent": "scrapy/2.9.0",
+      "threat_score": 120,
+      "threat_level": "CRITICAL",
+      "indicators": [
+        "Rate limit exceeded: 50 requests in 60s",
+        "Suspicious user agent: scrapy/2.9.0",
+        "Rapid endpoint traversal: 58 unique endpoints",
+        "Missing standard headers"
+      ],
+      "timestamp": "2025-11-21T14:00:23.714632"
+    },
+    {
+      "ip": "192.168.1.102",
+      "endpoint": "/page58",
+      "user_agent": "scrapy/2.9.0",
+      "threat_score": 120,
+      "threat_level": "CRITICAL",
+      "indicators": [
+        "Rate limit exceeded: 50 requests in 60s",
+        "Suspicious user agent: scrapy/2.9.0",
+        "Rapid endpoint traversal: 59 unique endpoints",
+        "Missing standard headers"
+      ],
+      "timestamp": "2025-11-21T14:00:23.714632"
+    },
+    {
+      "ip": "192.168.1.102",
+      "endpoint": "/page59",
+      "user_agent": "scrapy/2.9.0",
+      "threat_score": 120,
+      "threat_level": "CRITICAL",
+      "indicators": [
+        "Rate limit exceeded: 50 requests in 60s",
+        "Suspicious user agent: scrapy/2.9.0",
+        "Rapid endpoint traversal: 60 unique endpoints",
+        "Missing standard headers"
+      ],
+      "timestamp": "2025-11-21T14:00:23.714632"
+    },
+    {
+      "ip": "192.168.1.102",
+      "endpoint": "/page60",
+      "user_agent": "scrapy/2.9.0",
+      "threat_score": 120,
+      "threat_level": "CRITICAL",
+      "indicators": [
+        "Rate limit exceeded: 50 requests in 60s",
+        "Suspicious user agent: scrapy/2.9.0",
+        "Rapid endpoint traversal: 61 unique endpoints",
+        "Missing standard headers"
+      ],
+      "timestamp": "2025-11-21T14:00:23.714632"
+    }
+  ]
+}

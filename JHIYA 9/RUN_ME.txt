@@ -1,0 +1,133 @@
+================================================================================
+  WEB RECONNAISSANCE & OSINT TOOLS - HOW TO RUN
+================================================================================
+
+STEP 1: INSTALL DEPENDENCIES (Required for Red Team tools)
+------------------------------------------------------------
+Open PowerShell or Command Prompt in this directory and run:
+
+    pip install -r requirements.txt
+
+If you get permission errors:
+    python -m pip install -r requirements.txt
+
+================================================================================
+
+STEP 2: CHOOSE WHAT TO RUN
+------------------------------------------------------------
+
+OPTION A: BLUE TEAM DETECTION DEMO (No internet needed - start here!)
+------------------------------------------------------------
+Run this first to see how the detection system works:
+
+    python blue_team/detection_engine.py
+
+OR use the interactive runner:
+
+    python run_example.py
+
+================================================================================
+
+OPTION B: RED TEAM - SUBDOMAIN ENUMERATION
+------------------------------------------------------------
+Discover subdomains for a domain:
+
+    python red_team/subdomain_enum.py -d example.com
+
+Save results to file:
+    python red_team/subdomain_enum.py -d example.com -o results.txt
+
+More threads (faster but more aggressive):
+    python red_team/subdomain_enum.py -d example.com -t 100
+
+Example:
+    python red_team/subdomain_enum.py -d github.com
+
+================================================================================
+
+OPTION C: RED TEAM - EMAIL HARVESTING
+------------------------------------------------------------
+Harvest email addresses from a domain:
+
+    python red_team/email_harvest.py -d example.com
+
+Deeper crawl (takes longer, finds more):
+    python red_team/email_harvest.py -d example.com --max-depth 3
+
+Save results:
+    python red_team/email_harvest.py -d example.com -o emails.txt
+
+Example:
+    python red_team/email_harvest.py -d github.com --max-depth 2
+
+================================================================================
+
+OPTION D: BLUE TEAM - LOG ANALYSIS
+------------------------------------------------------------
+Analyze web server logs for suspicious activity:
+
+For Nginx logs:
+    python blue_team/log_analyzer.py -f access.log --format nginx
+
+For Apache logs:
+    python blue_team/log_analyzer.py -f access.log --format apache
+
+Save report:
+    python blue_team/log_analyzer.py -f access.log --format nginx -o report.json
+
+Note: You need an actual log file for this. Use full path if needed:
+    python blue_team/log_analyzer.py -f "C:\nginx\logs\access.log" --format nginx
+
+================================================================================
+
+OPTION E: UNIFIED INTERFACE (main.py)
+------------------------------------------------------------
+All tools in one place:
+
+Red Team:
+    python main.py red subdomain -d example.com
+    python main.py red email -d example.com
+
+Blue Team:
+    python main.py blue detection
+    python main.py blue log -f access.log --format nginx
+
+================================================================================
+
+QUICK START (Recommended)
+------------------------------------------------------------
+1. First, test Blue Team detection (works immediately):
+   python blue_team/detection_engine.py
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Try Red Team subdomain enumeration:
+   python red_team/subdomain_enum.py -d github.com
+
+4. Try email harvesting:
+   python red_team/email_harvest.py -d github.com --max-depth 2
+
+================================================================================
+
+GETTING HELP
+------------------------------------------------------------
+See detailed options:
+    python red_team/subdomain_enum.py --help
+    python red_team/email_harvest.py --help
+    python blue_team/log_analyzer.py --help
+    python main.py --help
+
+================================================================================
+
+IMPORTANT LEGAL NOTICE
+------------------------------------------------------------
+⚠️  ONLY use Red Team tools on:
+   - Systems you own
+   - Systems you have explicit written permission to test
+   - Public domains for educational purposes (be respectful)
+
+Unauthorized access is illegal and unethical!
+
+================================================================================
+

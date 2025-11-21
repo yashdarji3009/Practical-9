@@ -1,0 +1,12 @@
+admin.github.com
+api.github.com
+blog.github.com
+ns1.github.com
+ns2.github.com
+services.github.com
+shop.github.com
+smtp.github.com
+support.github.com
+test.github.com
+wiki.github.com
+www.github.com
